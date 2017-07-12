@@ -1,0 +1,14 @@
+/**
+create_dbtest80.py - automates installation of DBTEST80 productline
+run_test.py - automates setup and running of Java regression tests on DBTEST80 productline
+**/
+
+/**Step-by-step setup**/
+
+1. Download and install Python in your machine. Python 3 is preferred but this will also run in Python 2 (I think ;) ).
+2. Create database instance for DBTEST80 productline
+3. Edit dbtest80.cfg and provide all the necessary entries for creating the database capfile and editda file
+4. Run init.bat/enter.cmd depending on whether you're using a binary box or a sandbox
+5. CD to the location of the Python scripts
+6. Run python create_dbtest80.py
+7. Run python run_test.py
