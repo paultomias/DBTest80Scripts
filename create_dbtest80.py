@@ -11,7 +11,7 @@ editda_path = file_path + "/files/dbtest80.editda"
 cfg_file = open(cfg_path, "r")
 
 for line in cfg_file:
-	match = re.search(r'^([\w]+)\s*=\s*([\w\\\-\@]+)', line)
+	match = re.search(r'^([\w]+)\s*=\s*([\w\\\-\@\.]+)', line)
 	if match:
 		if match.group(1) not in cfg_dict:
 			cfg_dict[match.group(1)] = match.group(2)
@@ -34,7 +34,7 @@ try:
 		if 'PRODLINE' in line:
 			break
 
-		match = re.search(r'^([\w]+)\s*=\s*([\w\\\-\@]+)', line)
+		match = re.search(r'^([\w]+)\s*=\s*([\w\\\-\@\.]+)', line)
 		
 		if match:
 			cap_file.write(match.group()+"\n")
