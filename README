@@ -7,8 +7,10 @@ run_test.py - automates setup and running of Java regression tests on DBTEST80 p
 
 1. Download and install Python in your machine. Python 3 is preferred but this will also run in Python 2 (I think ;) ).
 2. Create database instance for DBTEST80 productline
-3. Edit dbtest80.cfg and provide all the necessary entries for creating the database capfile and editda file
-4. Run init.bat/enter.cmd depending on whether you're using a binary box or a sandbox
-5. CD to the location of the Python scripts
-6. Run python create_dbtest80.py
-7. Run python run_test.py
+3. Checkout the codes from this CVS repository: LSFe/DBTest80Scripts
+4. Copy dependency files from this shared folder (\\PHMADPDTOMIAS1\Users\pdtomias\Desktop\Installers\dbtests\files) to LSFe/DBTest80Scripts/files. 
+5. Edit dbtest80.cfg and provide all the necessary entries for creating the database capfile and editda file
+6. Run init.bat/enter.cmd depending on whether you're using a binary box or a sandbox
+7. CD to the location of the Python scripts
+8. Run python create_dbtest80.py
+9. Run python run_test.py
